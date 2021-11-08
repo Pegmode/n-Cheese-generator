@@ -1,3 +1,3 @@
 # n-Cheese-generator
-Generate video showing to n cheeses
+Generate video showing top n cheeses
 
