@@ -7,7 +7,7 @@ DEBUG_SIZE = (500,500)#debug image size
 DEFAULT_BG_COLOR = (10, 66, 123)#default win
 DEFAULT_TEXT_COLOR = (0xff, 0xff, 0xff)
 DEBUG_TEXT = "TOP n \nCHEESE"
-DEFAULT_FONT = "genarate Tile\ComicNeue-Bold.ttf"
+DEFAULT_FONT = "cheese_title_generator\ComicNeue-Bold.ttf"
 
 def generateCheeseText(size, text):#generate a single formatted text title
     im = Image.new("RGB", size, color = DEFAULT_BG_COLOR)
@@ -33,3 +33,5 @@ def generateNCheeseTitles(n, size):#generate N
 
 def debugGenerateTiles():#debug and example usage for generating title cards
     generateNCheeseTitles(4, DEBUG_SIZE)
+
+debugGenerateTiles()
