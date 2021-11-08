@@ -15,7 +15,7 @@ outstring += "file 'title.jpg'\nduration {}\n".format(INTRO_TIME)
 
 for i in range(N_CHEESE):
     outstring += "file 'text{}.jpg'\nduration{}\n".format(i + 1, FRAME_TIME)
-    outstring += "file 'cheese{}.jpg'\nduration{}\n".format(i + 1, FRAME_TIME)
+    outstring += "file 'cheese_{}.jpg'\nduration{}\n".format(i + 1, FRAME_TIME)
 
 f = open(OUTFILE_NAME, "w")
 f.write(outstring)
